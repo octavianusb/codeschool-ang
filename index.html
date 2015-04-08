@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html class="no-js" ng-app="gemStore">
+<head>
+	<title>Angular</title>
+
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+
+	<!-- CSS style -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<!-- CSS MEDIA QUERYES -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<script type="text/javascript" src="js/modernizr.custom-2.6.2.min.js"></script>
+</head>
+
+
+
+<body ng-controller="StoreController as store">
+    <div class="content">
+	<!-- Content -->
+        <!--  Store Header  -->
+        <header>
+            <h1 class="text-center">Flatlander Crafted Gems</h1>
+            <h2 class="text-center">– an Angular store –</h2>
+        </header>
+
+        <!--  Products Container  -->
+        <div class="list-group">
+            <!--  Product Container  -->
+            <div class="list-group-item" ng-repeat="product in store.products">
+                <h3><product-title></product-title></h3>
+
+                <!-- Image Gallery  -->
+                <product-gallery></product-gallery>
+
+                <!-- Product Tabs  -->
+                <product-tabs></product-tabs>
+            </div>
+        </div>
+	<!-- / Content -->
+    </div>
+
+
+
+
+	<!-- Google CDN's jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<!-- Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+
+	<!-- Custom js functions -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/products.js"></script>
+</body>
+</html>

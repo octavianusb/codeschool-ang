@@ -1,0 +1,36 @@
+﻿	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 980px) {
+		
+	}
+	
+	
+	@media only screen and (max-width : 920px) {		
+			
+	}
+	
+	
+	@media only screen and (max-width : 880px) {		
+		
+	}
+	
+	@media only screen and (max-width : 790px) {		
+			
+	}
+	
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+	
+	}
+	
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+		
+	}
+
+	
