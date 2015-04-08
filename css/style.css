@@ -198,6 +198,10 @@ img{
     border: 0;
     margin-right: 25px;
     min-height: 50px;
+    cursor: pointer;
+}
+.img-thumbnails .thumbnail.active {
+    border: 1px solid #e3e3e3;
 }
 
 .img-thumbnails .thumbnail:last-child {

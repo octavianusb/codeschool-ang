@@ -3,7 +3,7 @@
         <img ng-src="{{product.images[gallery.current]}}" />
     </div>
     <ul class="img-thumbnails clearfix">
-        <li class="small-image pull-left thumbnail" ng-repeat="image in product.images" ng-click="gallery.setCurrent([$index])">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in product.images" ng-click="gallery.setCurrent([$index])" ng-class="{'active': $index == gallery.current}">
             <img ng-src="{{image}}" />
         </li>
     </ul>
